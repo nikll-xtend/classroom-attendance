@@ -304,13 +304,6 @@ POST /api/logout/
 ---
 
 ## Assumptions & Clarifications
-
--   Used Seeders to populate Users,students,classrooms
--   Token abilities for autherization
--   Sanctum for autentication
--   Background job for bulk attendance
--   No UI is implemented, as the focus is purely on Api's.
-
 - Used Seeders to populate Users, Students, and Classrooms for testing purposes.
 - Token Abilities are used for fine-grained API authorization.
 - Laravel Sanctum handles API token-based authentication.
@@ -322,5 +315,4 @@ POST /api/logout/
 - Applied Eager Loading with Field Selection to optimize API performance and reduce response size.
 - Used PHPUnit for  testing.
 - Rate limiting, error logging are considered.
-- The app is Dockerized, and Laravel Sail is used for a simplified local development environment.
 
