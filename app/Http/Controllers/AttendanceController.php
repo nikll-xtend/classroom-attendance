@@ -140,10 +140,6 @@ class AttendanceController extends Controller
             return response()->json(['message' => 'Unauthorized'], 403);
         }
 
-        if (!in_array($this->user->role, ['teacher', 'admin'], true)) {
-            return response()->json(['message' => 'Forbidden: Only teachers or admins allowed'], 403);
-        }
-
         try {
             $attendance = Redis::get('attendance:student:' . $student_id);
 

@@ -53,10 +53,4 @@ class User extends Authenticatable
     {
         return $this->hasMany(Attendance::class, 'marked_by');
     }
-
-
-    public function attendancesAsStudent()
-    {
-        return $this->hasMany(Attendance::class, 'student_id');
-    }
 }
