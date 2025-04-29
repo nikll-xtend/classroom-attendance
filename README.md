@@ -290,6 +290,19 @@ DELETE /api/attendance/{id}
 
 ---
 
+### Logout
+
+
+```http
+POST /api/logout/
+```
+
+| Header          | Type     | Description                 |
+| :-------------- | :------- | :-------------------------- |
+| `Authorization` | `string` | **Required**. Bearer token. |
+
+---
+
 ## Assumptions & Clarifications
 
 -   Used Seeders to populate Users,students,classrooms
