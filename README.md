@@ -16,7 +16,7 @@ A simple and secure PHP service to mark student attendance in classrooms.
 
 clone this repository
 
-The repository includes the Dockerfile and docker-compose.yml file. If Docker and Docker Compose are installed on your system, you can run the project using either Sail or standard Docker commands.
+The repository includes the docker-compose.yml file. If Docker and Docker Compose are installed on your system, you can run the project using either Sail or standard Docker commands.
 Make sure your `.env` file is configured with a valid database connection, `.env.testing` for testing.
 
 ### Running with sail
